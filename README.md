@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/kmedian/randdate.svg?branch=master)](https://travis-ci.org/kmedian/randdate)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmedian/randdate/master?urlpath=lab)
+[![PyPI version](https://badge.fury.io/py/randdate.svg)](https://badge.fury.io/py/randdate)
+[![randdate](https://snyk.io/advisor/python/randdate/badge.svg)](https://snyk.io/advisor/python/randdate)
+
 
 # randdate
 Generate a list of random dates (datetime objects).
