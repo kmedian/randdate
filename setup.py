@@ -9,7 +9,7 @@ def read(fname):
 
 
 setup(name='randdate',
-      version='0.1.0',
+      version='0.1.1',
       description='Generate a list of random dates or resp. datetime objects',
       long_description=read('README.rst'),
       long_description_content_type='text/markdown',
