@@ -1,5 +1,8 @@
-[![Build Status](https://travis-ci.org/kmedian/randdate.svg?branch=master)](https://travis-ci.org/kmedian/randdate)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmedian/randdate/master?urlpath=lab)
+[![PyPI version](https://badge.fury.io/py/randdate.svg)](https://badge.fury.io/py/randdate)
+[![randdate](https://snyk.io/advisor/python/randdate/badge.svg)](https://snyk.io/advisor/python/randdate)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/kmedian/randdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kmedian/randdate/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/kmedian/randdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kmedian/randdate/context:python)
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImttZWRpYW4iLCJyZXBvMSI6InJhbmRkYXRlIiwiaW5jbHVkZUxpbnQiOmZhbHNlLCJhdXRob3JJZCI6Mjk0NTIsImlhdCI6MTYxOTU0MDM0N30.mqU-JDLOg9XOiZ0xoxHVsWFmm9sPiYnBGg49okrZzi8)](https://www.deepcode.ai/app/gh/kmedian/randdate/_/dashboard?utm_content=gh%2Fkmedian%2Franddate)
 
 # randdate
 Generate a list of random dates (datetime objects).
@@ -21,8 +24,14 @@ Check the [examples](examples) folder for notebooks.
 * Check syntax: `flake8 --ignore=F401`
 * Remove `.pyc` files: `find . -type f -name "*.pyc" | xargs rm`
 * Remove `__pycache__` folders: `find . -type d -name "__pycache__" | xargs rm -rf`
-* Upload to PyPi with twine: `python setup.py sdist && twine upload -r pypi dist/*`
 
+Publish
+
+```sh
+pandoc README.md --from markdown --to rst -s -o README.rst
+python setup.py sdist 
+twine upload -r pypi dist/*
+```
 
 ## Support
 Please [open an issue](https://github.com/kmedian/randdate/issues/new) for support.
